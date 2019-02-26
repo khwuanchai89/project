@@ -26,7 +26,7 @@ class ProductDetailView(generic.DetailView):
     model = Product
     template_name = 'product_view.html'
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
+        context = super(ProductDetailView, self).get_context_data(**kwargs)
         context['some_data'] = 'This is just some data'
 
         return context

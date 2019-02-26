@@ -5,7 +5,7 @@ class CustomerAdmin(admin.ModelAdmin):
     fields = ('firstname', 'lastname', 'dob', 'tel')
     list_display = ('id','firstname', 'lastname', 'dob', 'tel')
     list_filter = ('dob',)
-    list_editable = ('firstname', 'lastname', 'dob', 'tel')
+    list_editable = ('firstname', 'lastname', 'dob')
 admin.site.register(Customer, CustomerAdmin)
 
 class CarAdmin(admin.ModelAdmin):
